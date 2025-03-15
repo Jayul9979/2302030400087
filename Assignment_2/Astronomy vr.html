@@ -1,0 +1,418 @@
+<html>
+<head>
+    <title>Astronomy VR</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            background-color: #f3f4f6;
+            font-family: 'Roboto', sans-serif;
+        }
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+        nav a {
+            background-color: #3b82f6;
+            color: #ffffff;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+        .icon {
+            color: #4b5563;
+        }
+        main {
+            padding: 16px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+        @media (min-width: 768px) {
+            main {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 1024px) {
+            main {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        section {
+            background-color: #ffffff;
+            padding: 16px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            text-align: left;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+        }
+        th {
+            font-weight: bold;
+        }
+        .border-t {
+            border-top: 1px solid #e5e7eb;
+        }
+        .bg-blue-200 {
+            background-color: #bfdbfe;
+        }
+        .text-blue-800 {
+            color: #1e40af;
+        }
+        .bg-gray-200 {
+            background-color: #e5e7eb;
+        }
+        .text-gray-800 {
+            color: #1f2937;
+        }
+        .rounded {
+            border-radius: 4px;
+        }
+        .shadow-md {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        .text-center {
+            text-align: center;
+        }
+        .text-2xl {
+            font-size: 1.5rem;
+        }
+        .font-bold {
+            font-weight: bold;
+        }
+        footer {
+            background-color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            padding: 16px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 16px;
+        }
+        .calendar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .calendar-header h2 {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+        .calendar-header button {
+            background-color: #3b82f6;
+            color: #ffffff;
+            padding: 4px 8px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 4px;
+            width: 100%;
+        }
+        .calendar-grid div {
+            text-align: center;
+            padding: 8px;
+            border-radius: 4px;
+        }
+        .calendar-grid .day-name {
+            font-weight: bold;
+        }
+        .calendar-grid .day {
+            background-color: #e5e7eb;
+        }
+        .calendar-grid .today {
+            background-color: #bfdbfe;
+        }
+</style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <img src="Icon rocket 3.jpg" width="30" height="30" style="margin-right: 8px;">
+            <h1>Astronomy VR</h1>
+        </div>
+        <nav style="display: flex; gap: 16px;">
+            <a href="Homepage.html">Home</a>
+            <a href="#">Celestial Bodies</a>
+            <a href="#">Planet Stars</a>
+        </nav>
+        <div style="display: flex; gap: 16px;">
+            <i class="fas fa-cog icon"></i>
+            <i class="fas fa-bell icon"></i>
+            <i class="fas fa-user icon"></i>
+        </div>
+    </header>
+    <main>
+        <section style="grid-column: span 1 / span 2;">
+            <h2 style="font-size: 1.125rem; font-weight: bold; margin-bottom: 16px;">Explore the Universe</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Celestial Body</th>
+                        <th>Details</th>
+                        <th>Description</th>
+                        <th>Image</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-t">
+                        <td>Journey to the Moon</td>
+                        <td>Today</td>
+                        <td><span class="bg-blue-200 text-blue-800 px-2 py-1 rounded">In progress</span></td>
+                        <td><i class="fas fa-question-circle text-gray-600"></i></td>
+                    </tr>
+                    <tr class="border-t">
+                        <td>Discovering Mars</td>
+                        <td>Tomorrow</td>
+                        <td><span class="bg-blue-200 text-blue-800 px-2 py-1 rounded">In progress</span></td>
+                        <td><i class="fas fa-question-circle text-gray-600"></i></td>
+                    </tr>
+                    <tr class="border-t">
+                        <td>Jupiter's Moons</td>
+                        <td>10/01/2021</td>
+                        <td><span class="bg-gray-200 text-gray-800 px-2 py-1 rounded">Not started</span></td>
+                        <td><i class="fas fa-times text-gray-600"></i></td>
+                    </tr>
+                    <tr class="border-t">
+                        <td>The Life Cycle of a Star</td>
+                        <td>13/01/2021</td>
+                        <td><span class="bg-gray-200 text-gray-800 px-2 py-1 rounded">Not started</span></td>
+                        <td><i class="fas fa-times text-gray-600"></i></td>
+                    </tr>
+                    <tr class="border-t">
+                        <td>The Milky Way Galaxy</td>
+                        <td>15/01/2021</td>
+                        <td><span class="bg-gray-200 text-gray-800 px-2 py-1 rounded">Not started</span></td>
+                        <td><i class="fas fa-times text-gray-600"></i></td>
+                    </tr>
+                    <tr class="border-t">
+                        <td>The Andromeda Galaxy</td>
+                        <td>17/01/2021</td>
+                        <td><span class="bg-gray-200 text-gray-800 px-2 py-1 rounded">Not started</span></td>
+                        <td><i class="fas fa-question-circle text-gray-600"></i></td>
+                    </tr>
+                    <tr class="border-t">
+                        <td>Aurora Borealis</td>
+                        <td>19/01/2021</td>
+                        <td><span class="bg-gray-200 text-gray-800 px-2 py-1 rounded">Not started</span></td>
+                        <td><i class="fas fa-question-circle text-gray-600"></i></td>
+                    </tr>
+                    <tr class="border-t">
+                        <td>The Big Bang Theory</td>
+                        <td>21/01/2021</td>
+                        <td><span class="bg-gray-200 text-gray-800 px-2 py-1 rounded">Not started</span></td>
+                        <td><i class="fas fa-question-circle text-gray-600"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2 style="font-size: 1.125rem; font-weight: bold; margin-bottom: 16px;">Your VR statistics</h2>
+            <ul>
+                <li class="flex justify-between py-2 border-t">
+                    <span>VR tours inbox</span>
+                    <span>5</span>
+                </li>
+                <li class="flex justify-between py-2 border-t">
+                    <span>Completed tours</span>
+                    <span>12</span>
+                </li>
+                <li class="flex justify-between py-2 border-t">
+                    <span>Achievements</span>
+                    <span>9</span>
+                </li>
+                <li class="flex justify-between py-2 border-t">
+                    <span>Time spent exploring</span>
+                    <span>11:34:12</span>
+                </li>
+                <li class="flex justify-between py-2 border-t">
+                    <span>Planned tours</span>
+                    <span>2</span>
+                </li>
+                <li class="flex justify-between py-2 border-t">
+                    <span>Organised tours</span>
+                    <span>1</span>
+                </li>
+            </ul>
+        </section>
+        <section class="calendar">
+            <div class="calendar-header">
+                <button>&lt;</button>
+                <h2>January 2021</h2>
+                <button>&gt;</button>
+            </div>
+            <div class="calendar-grid">
+                <div class="day-name">Sun</div>
+                <div class="day-name">Mon</div>
+                <div class="day-name">Tue</div>
+                <div class="day-name">Wed</div>
+                <div class="day-name">Thu</div>
+                <div class="day-name">Fri</div>
+                <div class="day-name">Sat</div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day">1</div>
+                <div class="day">2</div>
+                <div class="day">3</div>
+                <div class="day">4</div>
+                <div class="day">5</div>
+                <div class="day">6</div>
+                <div class="day">7</div>
+                <div class="day">8</div>
+                <div class="day">9</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>
+                <div class="day">31</div>
+            </div>
+        </section>
+        <section style="grid-column: span 1 / span 2;">
+            <h2 style="font-size: 1.125rem; font-weight: bold; margin-bottom: 16px;">New available tours</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tour</th>
+                        <th>Duration</th>
+                        <th>Status</th>
+                        <th>Achievement</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-t">
+                        <td>VR Experience Simulations</td>
+                        <td>01/02/2021</td>
+                        <td><span class="bg-blue-200 text-blue-800 px-2 py-1 rounded">Join Now</span></td>
+                        <td><span class="bg-blue-200 text-blue-800 px-2 py-1 rounded">Sign Up</span></td>
+                    </tr>
+                    <tr class="border-t">
+                        <td>Educational Modules</td>
+                        <td>01/02/2021</td>
+                        <td><span class="bg-blue-200 text-blue-800 px-2 py-1 rounded">Join Now</span></td>
+                        <td><span class="bg-blue-200 text-blue-800 px-2 py-1 rounded">Sign Up</span></td>
+                    </tr>
+                    <tr class="border-t">
+                        <td>Virtual Tour Teams</td>
+                        <td>14/02/2021</td>
+                        <td><span class="bg-blue-200 text-blue-800 px-2 py-1 rounded">Join Now</span></td>
+                        <td><span class="bg-blue-200 text-blue-800 px-2 py-1 rounded">Sign Up</span></td>
+                    </tr>
+                    <tr class="border-t">
+                        <td>Achievement and Badging System</td>
+                        <td>01/03/2021</td>
+                        <td><span class="bg-blue-200 text-blue-800 px-2 py-1 rounded">Join Now</span></td>
+                        <td><span class="bg-blue-200 text-blue-800 px-2 py-1 rounded">Sign Up</span></td>
+                    </tr>
+                    <tr class="border-t">
+                        <td>Tour Studios</td>
+                        <td>01/04/2021</td>
+                        <td><span class="bg-blue-200 text-blue-800 px-2 py-1 rounded">Join Now</span></td>
+                        <td><span class="bg-blue-200 text-blue-800 px-2 py-1 rounded">Sign Up</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2 style="font-size: 1.125rem; font-weight: bold; margin-bottom: 16px;">Your VR Stats</h2>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="text-center">
+                    <div class="text-2xl font-bold">12</div>
+                    <div>Achievements</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl font-bold">99%</div>
+                    <div>Success Rate</div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 style="font-size: 1.125rem; font-weight: bold; margin-bottom: 16px;">Notifications</h2>
+            <ul>
+                <li class="py-2 border-t">New tour available.</li>
+                <li class="py-2 border-t">Welcome to AstronomyVR!</li>
+                <li class="py-2 border-t">Explore the universe with our virtual reality tours!</li>
+                <li class="py-2 border-t">Discover new celestial bodies and learn about them.</li>
+                <li class="py-2 border-t">Your tour is on hold.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="text-center">
+            <i class="fas fa-space-shuttle text-blue-500 text-2xl"></i>
+            <div>Space Explorer</div>
+        </div>
+        <div class="text-center">
+            <i class="fas fa-fast-forward text-blue-500 text-2xl"></i>
+            <div>Fast Forward</div>
+        </div>
+        <div class="text-center">
+            <i class="fas fa-rocket text-blue-500 text-2xl"></i>
+            <div>Quick Info</div>
+        </div>
+        <div class="text-center">
+            <i class="fas fa-atom text-blue-500 text-2xl"></i>
+            <div>Astronomy</div>
+        </div>
+        <div class="text-center">
+            <i class="fas fa-moon text-blue-500 text-2xl"></i>
+            <div>Night Owl</div>
+        </div>
+        <div class="text-center">
+            <i class="fas fa-star text-blue-500 text-2xl"></i>
+            <div>Streak Star</div>
+        </div>
+        <div class="text-center">
+            <i class="fas fa-sun text-blue-500 text-2xl"></i>
+            <div>Newbie</div>
+        </div>
+        <div class="text-center">
+            <i class="fas fa-earlybirds text-blue-500 text-2xl"></i>
+            <div>Early Bird</div>
+        </div>
+    </footer>
+</body>
+</html>

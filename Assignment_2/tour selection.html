@@ -1,0 +1,133 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Astronomy VR</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            background-color: #f3f4f6;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+        nav ul {
+            display: flex;
+            gap: 16px;
+        }
+        nav a {
+            color: #4b5563;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: #1f2937;
+        }
+        main {
+            padding: 32px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+        @media (min-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 1024px) {
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .card img {
+            width: 100%;
+            height: 192px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 16px;
+        }
+        .card-content h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .card-content p {
+            color: #4b5563;
+            margin-bottom: 16px;
+        }
+        .card-content button {
+            background-color: #3b82f6;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 999px;
+            width: 100%;
+            cursor: pointer;
+        }
+        .card-content button:hover {
+            background-color: #2563eb;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <i class="fas fa-globe" style="font-size: 1.25rem; margin-right: 8px;"></i>
+            <h1>Astronomy VR</h1>
+        </div>
+        <nav class="navbar">
+            <div class="nav-links">
+                <a href="Homepage.html">Home</a>
+                <a href="#">Tour selection</a>
+                <a href="#">Virtual Tour</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="grid">
+            <div class="card">
+                <img src="Rectangle 24.jpg" alt="A depiction of a galactic exploration with a view of the Milky Way, star clusters, and nebulae">
+                <div class="card-content">
+                    <h2>Galactic Exploration</h2>
+                    <p>Embark on a journey through the Milky Way, exploring star clusters and nebulae.</p>
+                    <button>Start Tour</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Rectangle 25.png" alt="A depiction of a lunar expedition with a view of the Moon's surface, craters, and the Earthrise">
+                <div class="card-content">
+                    <h2>Lunar Expedition</h2>
+                    <p>Experience the surface of the Moon, witnessing its craters and the Earthrise.</p>
+                    <button>Start Tour</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Rectangle 26.jpg" alt="A depiction of Mars with its landscapes and dust storms">
+                <div class="card-content">
+                    <h2>Mars Adventure</h2>
+                    <p>Discover the red planet, exploring its landscapes and dust storms.</p>
+                    <button>Start Tour</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

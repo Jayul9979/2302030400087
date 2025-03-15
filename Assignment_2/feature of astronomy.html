@@ -1,0 +1,249 @@
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>feature of astronomy</title>
+  <style>
+    body {
+      background-color: #f3f4f6;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      padding: 16px;
+    }
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background-color: #d1d5db;
+      padding: 8px;
+      border-radius: 8px;
+    }
+    .search-bar input {
+      background-color: #d1d5db;
+      margin-left: 8px;
+      outline: none;
+      width: 100%;
+      border: none;
+    }
+    .feature-tour, .recommended, .popular-tours {
+      margin-top: 16px;
+    }
+    .feature-tour h2, .recommended h2, .popular-tours h2 {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .feature-tour .card, .recommended .card, .popular-tours .card {
+      background-color: #e5e7eb;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      margin-top: 8px;
+    }
+    .feature-tour .card img, .recommended .card img, .popular-tours .card img {
+      border-radius: 16px;
+    }
+    .feature-tour .card .info, .recommended .card .info, .popular-tours .card .info {
+      margin-left: 8px;
+      flex: auto;
+    }
+    .feature-tour .card .info p, .recommended .card .info p, .popular-tours .card .info p {
+      margin: 8px 0;
+    }
+    .feature-tour .card .info .icons, .recommended .card .info .icons {
+      display: flex;
+      align-items: center;
+      color: #6b7280;
+      font-size: 14px;
+    }
+    .feature-tour .card .info .icons i, .recommended .card .info .icons i {
+      margin-right: 8px;
+    }
+    .feature-tour .card button, .recommended .card button, .popular-tours .card button {
+      background-color: #3b82f6;
+      color: white;
+      padding: 20px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+    }
+    .recommended .cards {
+      display: flex;
+      gap: 16px;
+    }
+    .recommended .card {
+      width: 30%;
+    }
+    .popular-tours .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .popular-tours .header .profile {
+      display: flex;
+      align-items: center;
+    }
+    .popular-tours .header .profile img {
+      border-radius: 50%;
+      margin-left: 8px;
+      width: 32px;
+      height: 32px;
+    }
+    .popular-tours .header .profile i {
+      margin-left: 8px;
+    }
+    .popular-tours .card {
+      background-color: #dbeafe;
+      justify-content: space-between;
+    }
+    .popular-tours .card .info {
+      display: flex;
+      align-items: center;
+    }
+    .popular-tours .card .info img {
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+    }
+    .popular-tours .card .info .text {
+      margin-left: 8px;
+    }
+    .popular-tours .card .info .text p {
+      margin: 0;
+    }
+    .popular-tours .card button {
+      background-color: #3b82f6;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 16px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="search-bar">
+      <i class="fas fa-search" style="color: #6b7280;"></i>
+      <input type="text" placeholder="Search celestial bodies"/>
+    </div>
+    <div class="feature-tour">
+      <h2>Feature Tour: The Solar System</h2>
+      <div class="card">
+        <img src="gi-space-cover 1.jpg" alt="Astronaut in space" width="100" height="100"/>
+        <div class="info">
+          <p>By Astronomy VR</p>
+          <div class="icons">
+            <i class="fas fa-download"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-share-alt"></i>
+          </div>
+          <p>Available now . 1 hour tour</p>
+        </div>
+        <button>
+          <img src="play_arrow_filled.jpg">
+        </button>
+      </div>
+    </div>
+    <div class="recommended">
+      <h2>Recommended for you</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="VtkGQvZhCU3M7qtRnriPNZ 2.jpg" alt="Telescope under the night sky" width="150" height="100"/>
+          <div class="info">
+            <p>How to use a telescope for beginners</p>
+            <p>By Astronomy VR</p>
+            <div class="icons">
+              <i class="fas fa-download"></i>
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-share-alt"></i>
+            </div>
+            <p>10 Jan 2025 . 58 min </p>
+          </div>
+          <button>
+            <img src="play_arrow_filled.jpg">
+          </button>
+        </div>
+        <div class="card">
+          <img src="VtkGQvZhCU3M7qtRnriPNZ 3.jpg" alt="Future of space exploration" width="150" height="100"/>
+          <div class="info">
+            <p>The Future of space Exploration</p>
+            <p>By Astronomy VR</p>
+            <div class="icons">
+              <i class="fas fa-download"></i>
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-share-alt"></i>
+            </div>
+            <p>01 Jan 2025 . 56 min</p>
+          </div>
+          <button>
+            <img src="play_arrow_filled.jpg">
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="popular-tours">
+      <div class="header">
+        <h2>Popular Tours</h2>
+        <div class="profile">
+          <i class="fas fa-bell" style="color: #6b7280;"></i>
+          <p>Discover new</p>
+          <img src="Ellipse 2.jpg" alt="User profile picture" width="30" height="30"/>
+          <i class="fas fa-chevron-down" style="color: #6b7280;"></i>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <img src="Ellipse 3.jpg" alt="Star Gazing Tour" width="50" height="50"/>
+          <div class="text">
+            <p>#1 Star Gazing Tour</p>
+            <p>112.5M Views</p>
+          </div>
+        </div>
+        <button>Start Tour</button>
+      </div>
+      <div class="card">
+        <div class="info">
+          <img src="Ellipse 4.jpg" alt="Planetary Adventure" width="50" height="50"/>
+          <div class="text">
+            <p>#2 Planetary Adventure</p>
+            <p>99.8M Views</p>
+          </div>
+        </div>
+        <button>Start Tour</button>
+      </div>
+      <div class="card">
+        <div class="info">
+          <img src="Ellipse 5.jpg" alt="Galactic Wonders" width="50" height="50"/>
+          <div class="text">
+            <p>#3 Galactic Wonders</p>
+            <p>1.2M Followers</p>
+          </div>
+        </div>
+        <button>Follow</button>
+      </div>
+      <div class="card">
+        <div class="info">
+          <img src="Ellipse 6.jpg" alt="Astronomy Tour" width="50" height="50"/>
+          <div class="text">
+            <p>#4 Astronomy Tour</p>
+            <p>1M Followers</p>
+          </div>
+        </div>
+        <button>Follow</button>
+      </div>
+      <div class="card">
+        <div class="info">
+          <img src="Ellipse 7.jpg" alt="Space Station Tour" width="50" height="50"/>
+          <div class="text">
+            <p>#5 Space Station Tour</p>
+            <p>750K Followers</p>
+          </div>
+        </div>
+        <button>Follow</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

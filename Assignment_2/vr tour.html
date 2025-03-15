@@ -1,0 +1,106 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Astronomy VR</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            background-color: white;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .logo img {
+            height: 32px;
+            width: 32px;
+            margin-right: 8px;
+        }
+        .navbar .logo span {
+            font-size: 20px;
+            font-weight: 600;
+            color: black;
+        }
+        .navbar .nav-links a {
+            margin-left: 16px;
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .navbar .nav-links a:hover {
+            color: gray;
+        }
+        .main-content {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 16px;
+        }
+        .main-content img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+        }
+        .floating-buttons {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .floating-buttons button {
+            background-color: #3b82f6;
+            color: white;
+            padding: 8px;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .floating-buttons button:hover {
+            background-color: #2563eb;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Icon rocket 3.jpg">
+            <span>Astronomy VR</span>
+        </div>
+        <div class="nav-links">
+            <a href="Homepage.html">Home</a>
+            <a href="#">Tour selection</a>
+            <a href="#">Virtual Tour</a>
+        </div>
+    </nav>
+    <div class="main-content">
+        <img src="Image (4) 1 (1).jpg">
+        <div class="floating-buttons">
+            <button>
+                <i class="fas fa-search-plus"></i>
+            </button>
+            <button>
+                <i class="fas fa-search-minus"></i>
+            </button>
+            <button>
+                <i class="fas fa-compass"></i>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
